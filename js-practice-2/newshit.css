@@ -1,0 +1,474 @@
+.fuck {
+    display: none; /*how to make it invisible the text*/
+    background-color: yellow;
+    padding: 30px;
+}
+
+.www:hover .fuck {
+    display: block; /*display as block */
+}
+
+/* how to use active */ 
+.wewe:active {
+    background-color:thistle;
+    text-align: center;
+}
+
+.woo:active {
+    background-color: tan;
+    text-align: left;
+}
+/*chưa ấn vào*/
+.bruh:link {
+    color: powderblue;
+    text-align: left;
+}
+
+.bruh:visited {
+    color: green;
+}
+/*đặt chuột vào chuyển màu sang rosybrown*/
+.bruh:hover {
+    color:rosybrown;
+}
+/*selected link*/
+.bruh:active {
+    color:slateblue;
+}
+
+a.ex1:hover, a.ex1:active {
+    color: red;
+}
+
+a.ex2:hover, a.ex2:active {font-size: 150%;}
+a.ex3:hover, a.ex3:active {background:red;}
+a.ex4:hover, a.ex3:active {
+    font-family: monospace;
+}
+a.ex5:visited, a.ex5:link {
+    text-decoration: none;
+}
+a.ex5:hover, a.ex5:active {text-decoration: underline;}
+
+.weeb:checked {
+    height: 20px;
+    width: 20px;
+}
+
+.have {
+    height: 20px;
+    width: 20px;
+}
+
+.baby:checked {
+    color:snow;
+    height: 100px;
+    width: 100px;
+    background: silver;
+}
+
+input [type=text]:enabled {
+    background: #ffff00;
+}
+input [type=text]:disabled {
+    background: #dddddd;
+}
+.adult:checked {
+    background: coral;
+    color: snow;
+    height: 100px;
+    width: 100px;
+}
+
+.empty {
+    width: 100px;
+    height: 20px;
+    background: #ff0000;
+}
+
+p:first-of-type {
+    background: red;
+}
+
+input#A1:focus {
+    background-color: seashell;
+}
+
+.green {
+    background-color: green;
+    margin: 100px 0px 200px 0px;
+}
+.green a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    padding: 15px;
+    display: inline-block;
+}
+
+.green ul {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+.green ul .shady {
+    display: inline-block;
+}
+
+.green ul .shady:hover {
+    background: #555;
+}
+
+.green ul .shady:hover ul {
+    display: block;
+}
+
+.green ul .shady ul {
+    position: absolute;
+    width: 200px;
+    display: none;
+}
+
+.green ul .shady ul .shady {
+    background: #555;
+    display: block;
+}
+
+#wacky{
+    border: 2px solid yellow;
+}
+
+#swag:invalid {
+    border: 2px solid red;
+}
+
+p:lang(it) {
+    background: yellow;
+}
+
+
+/* all link with class lol color to seagreen */
+.lol:link {
+    background-color: seagreen;
+}
+
+
+/*set p child number 2 to red*/
+p:nth-child(2) {
+    background: red;
+}
+
+/*set p child number 3 from bottom to top to green*/
+p:nth-last-child(3){
+    background: green;
+}
+
+/* set div number 2 from top to bottom to gray*/
+div:nth-of-type(2) {
+    background: gray;
+}
+
+/* set a background for every h4 color to red*/
+h4:only-of-type {
+    background: #ff0000;
+}
+
+p:only-child {
+    background: blue;
+}
+
+#set {
+    background-color: springgreen;
+}
+
+#scash {
+    background-color: aliceblue;
+}
+/*kinda like body*/
+/*:root {
+    background: #ffff00;
+}*/
+
+:target .sweet {
+    border: 2px solid #D4D4;
+    background-color: #e5eecc;
+}
+
+/*Add animations (chrome, safari, opera) */
+@-webkit-keyframes example {
+    from {top: -100px; opacity: 0;}
+    to {top: 0px; opacity:1;}
+}
+/*Add animation (Standard syntax) define keyframes */
+@keyframes example {
+    from {top: -100px; opacity: 0;}
+    tp {top: 0px; opacity:1;}
+}
+
+/* The modal's background */
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal:target {
+    display: table;
+    background-color: #f3f3f3;
+    position: absolute;
+    padding: 0;
+    outline: 0;
+    border: 1px #777 solid;
+    text-align: justify;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+    /* Add animation */
+    -webkit-animation-name: initial;
+    -webkit-animation-durations: 0.5s;
+    animation-name:initial;
+    animation-duration: 0.5s;
+}
+
+.closebtn:hover,
+.closebtn:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.container {
+    padding: 2px 16px;
+}
+
+header {
+    background-color: #5cb85c;
+    font-size: 25px;
+    color: white;
+}
+
+footer {
+    background-color: #5bc85c;
+    font-size:20px;
+    color: white;
+}
+/*add   - Remeber me after mcdonald for class wsss*/
+.wsss::after {
+    content: "  - Remeber me";
+}
+
+.widget::first-letter {
+    font-size: 200%;
+    color: #8A2BE2;
+}
+ 
+/* select the first line*/
+.vivi::first-line {
+    color: hotpink;
+}
+
+/*create an image gallery*/
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+#navlist {
+    position: relative;
+}
+
+#navlist li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    top: 0;
+}
+
+#navlist li, #navlist a {
+    height: 44px;
+    display: block;
+}
+
+#home {
+    left: 63px;
+    width: 43px;
+    
+}
+
+#prev {
+    left: 63px;
+    width: 43px;
+}
+
+#next {
+    left: 129px;
+    width: 43px;
+}
+
+[title~=flower] {
+    border: 5px solid yellow;
+}
+
+input[type=text] {
+    width: 150px;
+    display: block;
+    margin-bottom: 10px;
+    background-color: yellow;
+}
+  
+input[type=button] {
+    width: 120px;
+    margin-left: 35px;
+    display: block;
+}
+
+#search[type=text]{
+    width: 100%;
+    box-sizing: 2px solid #ccc;
+    border: 4px;
+    border-radius: 4px;
+    font-size: 20px;
+    background-color: white;
+    background-image: url('images/searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+
+}
+
+#rachel[type = text] {
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('images/searchicon.png');
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    transition: width 0.4s ease-in-out;
+}
+
+#raquel[type=button], #raquel[type = submit] #raquel[type = reset] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+h1 {font-size: 1.5cm;}
+h2 {font-size: 1cm;}
+p {
+  font-size: 0.5cm;
+  line-height: 1cm;
+}
+body {
+    font-size:16px;
+  }
+  
+div {
+    font-size: 3ch;
+    border: 1px solid black;
+}
+
+#rcoreners1{
+    border-radius: 25px;
+    background: #73AD21;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+}
+
+#rcorners2 {
+    border-radius: 25px;
+    border: 2px solid #747474;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+}
+
+#rcorners3 {
+    border-radius: 25px;
+    background: url('images/searchicon.png');
+    background-position: left top;
+    background-repeat: repeat;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+}
+
+#borderimg {
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(images/border.png) 30 round;
+    text-align: center;
+}
+
+#bst {
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url("images/border.png") 20% round;
+}
+
+#busty {
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url("images/border.png") 30% round;
+}
+/* css multiple background
+cac background-images khac nhau dc cach biet boi dau phay(,)
+shorthand syntax: 
+#ex1 {
+    background: url(images/hotcosplay.jpg) right bottom no-repeat, url(images/bitch.jpg) left top repeat;
+}
+}
+*/
+#ex1 {
+    background-image: url(images/hotcosplay.jpg), url(images/bitch.jpg);
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, repeat;
+    padding: 15px;
+}
+/*interesting*/
+#princess {
+    background: url(images/bitch.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 250px;
+}
+
+#leek {
+    background: url('images/hto2.jpg') left top no-repeat, url("images/bitch.jpg") right bottom no-repeat, url('images/border.png') left top repeat;
+    padding: 15px;
+    background-size: 50px, 130px, auto;
+    margin: 80px 0px 80px 0px;
+}
+
