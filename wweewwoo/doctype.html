@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src = "nung.js"></script>
+    <script src="https://www.w3schools.com/js/myScript.js"></script>
+</head>
+<body>
+    
+    <button type = "button" onclick = "s()">vv</button>
+    <p id="demoz">JavaScript can change the style of an HTML element.</p>
+
+    <button type="button" onclick="document.getElementById('demoz').style.fontSize='35px'">Click Me!</button>
+    <p id = "savage" style="display: none">Hello JAVASCRIPT</p>
+    <button type="button"
+    onclick="document.getElementById('savage').style.display='block'">Click me!</button>
+    <p id = "hailey">A paragraph </p>
+    <button type = "button" onclick = "jswag()">Try it </button>
+    <p>using w3schools js </p>
+    <p id="demo">A Paragraph.</p>
+
+    <button type="button" onclick="myFunction()">Try it</button>
+
+    <p>(myFunction is stored in an external file called "myScript.js")</p>
+    <script>
+        document.write(5 + 6);
+    </script>
+    <button type = "button" onclick="smith()">numbers </button>
+    <p id = "jscript">jscript</p>
+    <button type = "button" onclick = "carsz()">ầdasd</button>
+    <p id = "jav"></p>
+    <button type = "button" onclick = "fiction()">fiction</button>
+
+    <p id = "sasha"></p>
+    <script>
+        document.getElementById("sasha").innerHTML =
+        "The temperature is " + toCelsius(77) + " Celsius";
+        
+        function toCelsius(fahrenheit) {
+          return (5/9) * (fahrenheit-32);
+        } 
+    </script>
+    
+    <p>object </p>
+    <p id = "grey"></p>
+    <script>
+        const person = {
+            firstName: "john",
+            lastName: "Doe",
+            id : 555666,
+            fullName: function() {
+            return this.firstName + " " + this.lastName;
+            }
+        };
+        document.getElementById("grey").innerHTML = "fuck this bitch" + person.fullName() + " " + person.id;
+    </script>
+
+    <button onclick="this.innerHTML = Date()">The time is </button>
+
+    <p>string</p>
+    <p id="fuck"></p>
+
+    <script>
+        let text = "We are the so-called \"Vikings\" from the north.";
+        document.getElementById("fuck").innerHTML = text; 
+    </script>
+
+    <p id="eyas"></p>
+
+    <script>
+        let text1 = "Hello";
+        let text2 = "World!";
+        let text3 = text1.concat(" asdasdv asddsa ",text2);
+        document.getElementById("eyas").innerHTML = text3;
+    </script>
+
+    <p id = "rachel"></p>
+    <script>
+        let teddy = "a,b,c,d,e,f";
+        const a = teddy.split(",");
+        var i;
+        for (i = 0; i < a.length; i++){
+            console.log(a[i]);
+        }
+    </script>
+
+    <script>
+        let myNumbera = 2;
+        let txtaz = "";
+        while (myNumbera != Infinity) {
+            myNumbera *= myNumbera;
+            txtaz = txtaz + myNumbera + "<br>";
+        }
+        console.log(txtaz);
+    </script>
+    <p>number methods</p>
+    <script>
+        let xf = 9.656;
+        console.log(xf.toExponential(2));
+        console.log(xf.toExponential(4));
+        console.log(xf.toExponential(6));
+        
+    </script>
+    
+    <p id="babe"></p>
+
+    <script>
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+    let texti = "<ul>";
+    fruits.forEach(myFunction);
+    texti += "</ul>";
+    document.getElementById("babe").innerHTML = texti;
+
+    function myFunction(value) {
+    texti += "<li>" + value + "</li>";
+    } 
+    </script>
+    <script>
+        const shit = ["1", "2", "3", "4", "5"];
+        console.log(typeof shit);
+    </script>
+    <button onclick = "big()"></button>
+    <p id = "dem1"></p>
+    <p id = "dem2"></p>
+    <p>sorting arrays</p>
+    
+    <button onclick="mswag()">Try it</button>
+    <p id="demz"></p>
+    
+    <script>
+        const points = [40, 100, 1, 5, 25, 10];
+        document.getElementById("demz").innerHTML = points;  
+        
+        function mswag() {
+        points.sort(function(a, b){return a - b});
+        document.getElementById("demz").innerHTML = points;
+        }
+    </script>
+    <p> descendant </p>
+    <button onclick="boob()">Try it</button>
+    <p id="weir"></p>
+
+    <script>
+        const pointsz = [40, 100, 1, 5, 25, 10];
+        document.getElementById("weir").innerHTML = pointsz;
+
+        function boob() {
+        pointsz.sort(function(a, b){return b - a});
+        document.getElementById("weir").innerHTML = pointsz;
+    }
+    </script>
+
+    <p id = "ocb"></p>
+    <button onclick = "ass()">no no no</button>
+    <script>
+        const p = [10, 90, 21, 100, 45, 65];
+        document.getElementById("ocb").innerHTML = p;
+        function ass() {
+            p.sort(function(a,b){return b-a});
+            document.getElementById("ocb").innerHTML = p;
+        }
+    </script>
+    <p>Sorting an Array in Random Order</p>
+    <p id = "huh"></p>
+    <button onclick = "bigboobs()">hey hey ey see you</button>
+    <script>
+        const psy = [40, 100, 1, 5, 25, 10, 1000, 500,12, 31,26,19, 81];
+        document.getElementById("huh").innerHTML = p ;
+        function bigboobs() {
+            psy.sort(function(a,b){return 0.5 - Math.random()});
+            document.getElementById("huh").innerHTML = psy;
+        }
+    </script>
+    <p>Fisher yates methods</p>
+    <button onclick="myFunction()">Try it</button>
+    <p id="fisher"></p>
+
+    <script>
+        const mac_miller = [40, 100, 1, 5, 25, 10 , 1000, 99, 21, 12, 14, 15, 71, 2000];
+        document.getElementById("fisher").innerHTML = mac_miller;  
+
+        function myFunction() {
+            for (let i = mac_miller.length -1; i > 0; i--) {
+                let j = Math.floor(Math.random() * i)
+                let k = mac_miller[i]
+                mac_miller[i] = mac_miller[j]
+                mac_miller[j] = k
+            }
+            document.getElementById("fisher").innerHTML = mac_miller;
+        }
+    </script>
+    <p>using math max to find highest value </p>
+    <p id = "lolem"></p>
+    <button onclick = "make_it_work">có cái lồn ý</button>
+    <script>
+        const pzp = [10, 100, 21, 12, 41,12,51,91,99,1000];
+        document.getElementById("lolem").innerHTML = make_it_work(pzp);
+        function make_it_work(arr){
+            return Math.max.apply(null, arr);
+        }
+    </script>
+</body>
+</html>
