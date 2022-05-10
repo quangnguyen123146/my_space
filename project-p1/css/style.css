@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Mulish:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Roboto:ital,wght@1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #777;
+    padding: 30px; /*add padding 30px all 4 ways*/
+}
+
+.header {
+    height: 95vh;
+    background-image: linear-gradient(
+        to right bottom, 
+        rgba(126, 213,111,0.8), rgba(40, 180, 131, 0.8)),
+        url(../img/hero.jpg);
+    background-size: cover;
+    background-position: top; 
+    /*center to position the background at center of picture and would change top and bottom*/
+    /* top to position the background of the top does not change when the screen get shrink*/
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+}
+
+.logo-box {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+
+}
+
+.logo {
+    height: 35px;
+}
+
+.logo:hover {
+    animation: bigger 1.5s ease-out;
+}
+
+.heading-primary {
+    color: #fff;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 60px;
+}
+
+.heading-primary-main {
+    display: block; /*block to make it on top of each other*/
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 37.4px; /*keep letter away from each other */
+
+    /*for animation to work you need animation-name and anime-duration for timing*/
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out; /*ease in start slow then finished fast ease out start fast then finished slow*/
+}
+
+.heading-primary-sub {
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 17.4px;
+    animation-name: moveInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+/*how to center a div inside a relative pic*/
+.text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%); /*50% to right 50% to bottom from the position of the box*/
+    text-align: center;
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80% {
+        transform: translateX(20px);
+    }   
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+        /*go back to original form*/
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(+100px);
+    }
+    80% {
+        opacity: 0.75;
+        transform: translateX(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+        /*go back to original form*/
+    }
+}
+
+@keyframes bigger {
+    0% {
+        opacity: 0;
+        height: 35px;
+    }
+
+    80% {
+        height: 55px;
+    }   
+
+    100% {
+        opacity: 1;
+        height: 35px;
+        /*go back to original form*/
+    }
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 50px;
+    display: inline-block; /*do this when u wanna add some height and width to the object*/
+    transition: all .2s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
+.btn-white {
+    background-color: #fff;
+    color: #777;
+}
+
+/* .btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+} */
+
+.btn-white::after {
+    background-color: #fff;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
